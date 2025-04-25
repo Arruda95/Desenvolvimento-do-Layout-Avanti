@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>AVANTI - Super Sale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS 2.2.19 -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Top Bar -->
+  <div class="bg-blue-900 py-2 text-xs text-white flex justify-between px-4">
+    <div>Bem-vindo à AVANTI! Aproveite nossas ofertas.</div>
+    <div>
+      <i class="fas fa-user mr-2"></i>Minha Conta
+      <i class="fas fa-shopping-cart ml-4 mr-1"></i>Carrinho
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 md:flex md:items-center md:justify-between py-4">
+      <div class="font-bold text-2xl tracking-wide text-blue-900">AVANTI</div>
+      <nav class="mt-2 md:mt-0 space-x-3 text-gray-700 font-semibold">
+        <a href="#" class="hover:text-blue-600">Início</a>
+        <a href="#" class="hover:text-blue-600">Camisetas</a>
+        <a href="#" class="hover:text-blue-600">Canecas</a>
+        <a href="#" class="hover:text-blue-600">Sobre</a>
+        <a href="#" class="hover:text-blue-600">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SUPERSALE Banner -->
+  <section class="bg-gray-100 pt-8 pb-10 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Montagem de camisetas" class="w-40 h-40 object-cover rounded-lg shadow-lg mb-4 md:mb-0">
+      <div class="md:ml-10 text-center md:text-left">
+        <h1 class="text-4xl font-black text-gray-800 mb-2">SUPERSALE</h1>
+        <p class="text-gray-600 mb-2 font-medium tracking-wider">ITENS SELECIONADOS COM ATÉ</p>
+        <span class="text-blue-700 text-3xl font-bold">50% OFF</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Camisetas - Destaque -->
+  <section class="py-10 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6 text-gray-800">Camisetas em Oferta</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Produto 1 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-xl transition">
+          <img src="https://80724.cdn.simplo7.net/static/80724/sku/masculino-camiseta-basica-branca-masculina-100-algodao-1670001411427.png" alt="Camiseta Básica Branca" class="w-full h-40 object-cover rounded mb-3">
+          <div class="text-gray-900 font-semibold">Camiseta Básica Branca</div>
+          <div class="text-blue-700 font-black text-lg mt-1">R$49,99 <span class="text-xs font-normal text-gray-400 line-through ml-2">R$51,00</span></div>
+          <button class="mt-3 w-full bg-blue-700 text-white py-2 rounded font-bold hover:bg-blue-800 transition">COMPRAR</button>
+        </div>
+        <!-- Produto 2 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-xl transition">
+          <img src="https://images.tcdn.com.br/img/img_prod/475018/camiseta_masculina_basica_lisa_moderna_branca_100_algodao_30_1_5167_1_999d9d132388ce1585f9855f5df870f9_20230601173350.jpg" alt="Camiseta Lisa Moderna" class="w-full h-40 object-cover rounded mb-3">
+          <div class="text-gray-900 font-semibold">Camiseta Lisa Moderna</div>
+          <div class="text-blue-700 font-black text-lg mt-1">R$44,90 <span class="text-xs font-normal text-gray-400 line-through ml-2">R$54,00</span></div>
+          <button class="mt-3 w-full bg-blue-700 text-white py-2 rounded font-bold hover:bg-blue-800 transition">COMPRAR</button>
+        </div>
+        <!-- Produto 3 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-xl transition">
+          <img src="https://cdn.awsli.com.br/2500x2500/751/751979/produto/29910626/4039828fd1.jpg" alt="Camiseta Algodão Slim" class="w-full h-40 object-cover rounded mb-3">
+          <div class="text-gray-900 font-semibold">Camiseta Algodão Slim</div>
+          <div class="text-blue-700 font-black text-lg mt-1">R$39,90 <span class="text-xs font-normal text-gray-400 line-through ml-2">R$45,00</span></div>
+          <button class="mt-3 w-full bg-blue-700 text-white py-2 rounded font-bold hover:bg-blue-800 transition">COMPRAR</button>
+        </div>
+        <!-- Produto 4 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-xl transition">
+          <img src="https://cdn.awsli.com.br/2500x2500/1922/1922496/produto/160969354/camiseta-branca-corte-agbhsn.jpg" alt="Camiseta Corte Clássico" class="w-full h-40 object-cover rounded mb-3">
+          <div class="text-gray-900 font-semibold">Camiseta Corte Clássico</div>
+          <div class="text-blue-700 font-black text-lg mt-1">R$36,50 <span class="text-xs font-normal text-gray-400 line-through ml-2">R$41,90</span></div>
+          <button class="mt-3 w-full bg-blue-700 text-white py-2 rounded font-bold hover:bg-blue-800 transition">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Caneca AVANTI -->
+  <section class="bg-gray-100 py-10">
+    <div class="max-w-5xl mx-auto px-4 md:flex md:items-center">
+      <div class="md:w-1/2 flex justify-center">
+        <img src="https://cdn.sistemawbuy.com.br/arquivos/3d17564acc488fc823e134412b403172/produtos/6556464cee1f2/caneca-personalizada-preta-com-logo-657735262c156.webp" alt="Caneca AVANTI" class="w-64 h-64 object-contain rounded-lg shadow-2xl">
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0 md:pl-10">
+        <h3 class="text-2xl font-bold text-gray-800 mb-2">Caneca AVANTI</h3>
+        <p class="text-gray-600 mb-4">Desfrute do seu café, chá ou qualquer bebida com estilo! Nossa caneca de porcelana preta personalizada com o logo AVANTI une sofisticação e praticidade. Ótima opção para presentear ou completar sua mesa de trabalho. Edição limitada!</p>
+        <ul class="space-y-1 text-gray-700">
+          <li><i class="fas fa-check text-blue-600 mr-2"></i>Capacidade: 325ml</li>
+          <li><i class="fas fa-check text-blue-600 mr-2"></i>Material: Porcelana Premium</li>
+          <li><i class="fas fa-check text-blue-600 mr-2"></i>Resistente a micro-ondas e lava-louças</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informações Brand e Caneca -->
+  <section class="bg-white py-10">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row">
+      <!-- Bloco Esquerdo -->
+      <div class="md:w-1/2 flex flex-col justify-center">
+        <h3 class="text-xl font-bold text-gray-800 mb-2">Nossa Marca</h3>
+        <p class="text-gray-600 mb-3">A AVANTI nasceu com a missão de unir modernidade, conforto e estilo no seu dia a dia. Aqui, selecionamos os melhores materiais e criamos coleções pensadas em você.</p>
+        <div class="space-y-2 mt-2">
+          <div class="flex items-center"><i class="fas fa-leaf text-blue-700 mr-2"></i>Produtos sustentáveis</div>
+          <div class="flex items-center"><i class="fas fa-globe text-blue-700 mr-2"></i>Envio para todo Brasil</div>
+          <div class="flex items-center"><i class="fas fa-star text-blue-700 mr-2"></i>Atendimento personalizado</div>
+        </div>
+      </div>
+      <!-- Bloco Direito -->
+      <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
+        <img src="https://img.elo7.com.br/product/main/4915E3F/caneca-personalizada-preta-325ml-colocamos-sua-logo-caneca-325ml.jpg" alt="Caneca personalizada" class="w-56 h-56 object-cover rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sessão vitrines inferiores -->
+  <section class="py-10 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6 text-gray-800">Mais Camisetas</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <img src="https://images.tcdn.com.br/img/img_prod/1147112/camiseta_masculina_100_algodao_branca_423_1_95aa20b72fb21dc049cc95d5d93eaa32.jpg" class="w-full h-40 object-cover rounded mb-3" alt="Camiseta UpBásico">
+          <div class="text-gray-900 font-semibold">Camiseta UpBásico</div>
+          <div class="text-blue-700 font-black text-lg mt-1">R$40,00 <span class="text-xs font-normal text-gray-400 line-through ml-2">R$47,00</span></div>
+          <button class="mt-3 w-full bg-blue-700 text-white py-2 rounded font-bold hover:bg-blue-800 transition">COMPRAR</button>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <img src="https://img.irroba.com.br/filters:fill(fff):quality(80)/gugicalc/catalog/produtos/cm01-lisa/camiseta-basica-masculina-301-100-algodao-cm01-lisa-branca-02.jpg" class="w-full h-40 object-cover rounded mb-3" alt="Camiseta GuGi">
+          <div class="text-gray-900 font-semibold">Camiseta GuGi</div>
+          <div class="text-blue-700 font-black text-lg mt-1">R$42,90 <span class="text-xs font-normal text-gray-400 line-through ml-2">R$51,00</span></div>
+          <button class="mt-3 w-full bg-blue-700 text-white py-2 rounded font-bold hover:bg-blue-800 transition">COMPRAR</button>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <img src="https://images.tcdn.com.br/img/img_prod/802666/camiseta_masculina_branca_basica_manga_curta_algodao_anticorpus_2589_1_195aff9bbbcfa8e385bab60ecc5e54e6.jpg" class="w-full h-40 object-cover rounded mb-3" alt="Camiseta Anticorpus">
+          <div class="text-gray-900 font-semibold">Camiseta Anticorpus</div>
+          <div class="text-blue-700 font-black text-lg mt-1">R$38,00 <span class="text-xs font-normal text-gray-400 line-through ml-2">R$46,50</span></div>
+          <button class="mt-3 w-full bg-blue-700 text-white py-2 rounded font-bold hover:bg-blue-800 transition">COMPRAR</button>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <img src="https://80724.cdn.simplo7.net/static/80724/sku/masculino-camiseta-basica-branca-masculina-100-algodao-1674053061316.png" class="w-full h-40 object-cover rounded mb-3" alt="Camiseta Cabana Brand">
+          <div class="text-gray-900 font-semibold">Camiseta Cabana Brand</div>
+          <div class="text-blue-700 font-black text-lg mt-1">R$41,50 <span class="text-xs font-normal text-gray-400 line-through ml-2">R$43,00</span></div>
+          <button class="mt-3 w-full bg-blue-700 text-white py-2 rounded font-bold hover:bg-blue-800 transition">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner institucional -->
+  <section class="relative h-52 flex items-center justify-center bg-cover bg-center"
+    style="background-image:url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80')">
+    <div class="absolute inset-0 bg-gradient-to-r from-indigo-900 via-blue-800 to-blue-500 opacity-75"></div>
+    <h2 class="relative text-white font-black text-2xl text-center z-10 tracking-wide">Entre para o nosso clube e aproveite as vantagens exclusivas para clientes AVANTI!</h2>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="py-10 bg-white">
+    <div class="max-w-lg mx-auto flex flex-col items-center">
+      <h3 class="font-bold text-xl mb-2 text-gray-900">Cadastre-se para novidades</h3>
+      <form class="flex w-full max-w-md">
+        <input type="email" class="w-full border border-gray-200 px-4 py-2 rounded-l focus:outline-none focus:border-blue-700" placeholder="Seu e-mail aqui" required>
+        <button type="submit" class="bg-blue-700 px-5 py-2 rounded-r text-white font-bold hover:bg-blue-900 transition">Cadastrar</button>
+      </form>
+      <div id="newsletter-msg" class="text-green-600 mt-4 font-semibold hidden">Obrigado por se inscrever!</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between">
+      <div>
+        <div class="font-black text-xl text-white mb-2">AVANTI</div>
+        <div class="text-sm mb-2">O melhor em estilo, conforto e inovação.</div>
+        <div class="flex space-x-3 mt-2">
+          <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="hover:text-pink-400"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-twitter fa-lg"></i></a>
+        </div>
+      </div>
+      <div class="mt-6 md:mt-0">
+        <div class="font-semibold mb-2">Contato</div>
+        <div class="text-sm">E-mail: contato@avanti.com<br>
+        Telefone: (11) 0000-0000</div>
+      </div>
+      <div class="mt-6 md:mt-0">
+        <div class="font-semibold mb-2">Endereço</div>
+        <div class="text-sm">Rua Exemplo, 123<br>São Paulo - SP<br>CEP 01234-567</div>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 my-4"></div>
+    <div class="text-center text-xs text-gray-500">&copy; 2024 AVANTI. Todos os direitos reservados.</div>
+  </footer>
+
+  <!-- Newsletter JS -->
+  <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('newsletter-msg').classList.remove('hidden');
+      setTimeout(function(){
+        document.getElementById('newsletter-msg').classList.add('hidden');
+      }, 2500);
+      this.reset();
+    });
+  </script>
+</body>
+</html>
